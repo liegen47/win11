@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Windows 11 Clone
 
-## Getting Started
+This repository contains a prototype of a Windows 11 clone built using Next.js, Tailwind CSS, daisyUI, and several other libraries. This project is a work in progress and not fully functional yet. 
 
-First, run the development server:
+## Tech Stack
+
+- **Next.js**: `14.2.7`
+- **React**: `^18`
+- **React DOM**: `^18`
+- **Tailwind CSS**: For styling
+- **daisyUI**: For UI components
+- **@emotion/react**: `^11.13.3`
+- **@emotion/styled**: `^11.13.0`
+- **@mui/icons-material**: `^6.0.0`
+- **@mui/material**: `^6.0.0`
+- **devicons-react**: `^1.3.0`
+- **framer-motion**: `^11.3.30`
+- **react-draggable**: `^4.4.6`
+
+## Features
+
+- A prototype user interface mimicking Windows 11.
+- Interactive desktop environment with draggable windows.
+- Basic application simulation including Start Menu, Taskbar, and various apps.
+
+## Installation
+
+To get started with this project, clone the repository and install the dependencies:
 
 ```bash
+git clone https://github.com/your-username/windows-11-clone.git
+cd windows-11-clone
+npm install
+```
+## Usage 
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Disclaimer
+This project is a prototype and is not fully functional. It is intended for demonstration purposes only.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
