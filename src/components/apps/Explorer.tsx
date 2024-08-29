@@ -65,14 +65,14 @@ const Explorer: React.FC<ExplorerProps> = ({
         >
           <div className="title-bar">
             <div className="text-white h-9 w-full flex justify-end select-none">
-              <div className="material-symbols-outlined hover:bg-neutral-800 mb-2 w-11 flex justify-center items-center text-xl">
+              <div className=" hover:bg-neutral-800 mb-2 w-11 flex justify-center items-center text-xl">
                 <Minimize fontSize="medium" />
               </div>
-              <div className="material-symbols-outlined hover:bg-neutral-800 mb-2 w-11 flex justify-center items-center text-sm">
+              <div className=" hover:bg-neutral-800 mb-2 w-11 flex justify-center items-center text-sm">
                 <CheckBoxOutlineBlank fontSize="medium" />
               </div>
               <div
-                className="material-symbols-outlined hover:bg-red-700 mb-2 w-12 flex justify-center items-center text-xl"
+                className=" hover:bg-red-700 mb-2 w-12 flex justify-center items-center text-xl"
                 onClick={toggleExplorer}
               >
                 <Close fontSize="medium" />
@@ -90,43 +90,43 @@ const Explorer: React.FC<ExplorerProps> = ({
                   />
                   {aboutMe === true ? "Home" : page}
                 </div>
-                <div className="material-symbols-outlined hover:bg-neutral-800 m-0.5 w-6 rounded-md flex justify-center items-center text-lg">
+                <div className=" hover:bg-neutral-800 m-0.5 w-6 rounded-md flex justify-center items-center text-lg">
                   <Close fontSize="medium" />
                 </div>
               </div>
-              <div className="material-symbols-outlined absolute left-60 ml-0.5 h-7 w-8 flex justify-center hover:bg-neutral-800 rounded-md items-center text-xl">
+              <div className=" absolute left-60 ml-0.5 h-7 w-8 flex justify-center hover:bg-neutral-800 rounded-md items-center text-xl">
                 <Add fontSize="medium" />
               </div>
             </div>
             <div className="bg-neutral-800 w-full h-12 border-neutral-700 border-b-[1.5px] mt-1 flex">
               <div className="flex justify-around w-48 py-2">
                 <button
-                  className={`material-symbols-outlined font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50 ${
+                  className={` font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50 ${
                     isBold ? "opacity-45" : "font-bold"
                   }`}
                   onClick={() => handleDivClick(0)}
                 >
                   <ArrowBack fontSize="medium" />
                 </button>
-                <div className="material-symbols-outlined font-extralight text-xl opacity-45">
+                <div className=" font-extralight text-xl opacity-45">
                   <ArrowForward fontSize="medium" />
                 </div>
-                <div className="material-symbols-outlined font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50">
+                <div className=" font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50">
                   <ArrowUpward fontSize="medium" />
                 </div>
-                <div className="material-symbols-outlined font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50">
+                <div className=" font-extralight text-xl hover:bg-neutral-600 rounded-md hover:bg-opacity-50">
                   <Refresh fontSize="medium" />
                 </div>
               </div>
               <div className="flex bg-neutral-700 bg-opacity-50 my-1.5 rounded-md items-center text-sm px-2 mx-2 flex-grow gap-2 font-extralight">
-                <div className="material-symbols-outlined font-extralight">
+                <div className=" font-extralight">
                   <Home fontSize="medium" />
                 </div>
-                <div className="material-symbols-outlined font-extralight">
+                <div className=" font-extralight">
                   <NavigateNext fontSize="medium" />
                 </div>
                 <div> {aboutMe === true ? "Home" : page}</div>
-                <div className="material-symbols-outlined font-extralight">
+                <div className=" font-extralight">
                   <NavigateNext fontSize="medium" />
                 </div>
                 <div>
@@ -139,7 +139,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                 <div className="opacity-80">
                   Search {aboutMe === true ? "Home" : page}
                 </div>
-                <div className="material-symbols-outlined font-extralight text-sm">
+                <div className=" font-extralight text-sm">
                   <Search fontSize="medium" />
                 </div>
               </div>
@@ -153,7 +153,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                     className="w-5 h-5"
                   />
                   New
-                  <div className="material-symbols-outlined text-sm">
+                  <div className=" text-sm">
                     <ExpandMore fontSize="medium" />
                   </div>
                 </div>
@@ -197,7 +197,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                       className="w-5 h-5"
                     />
                     Sort
-                    <div className="material-symbols-outlined text-sm">
+                    <div className=" text-sm">
                       <ExpandMore fontSize="medium" />
                     </div>
                   </div>
@@ -208,7 +208,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                       className="w-5 h-5"
                     />
                     View
-                    <div className="material-symbols-outlined text-sm">
+                    <div className=" text-sm">
                       <ExpandMore fontSize="medium" />
                     </div>
                   </div>
@@ -219,7 +219,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                       className="w-5 h-5"
                     />
                     Filter
-                    <div className="material-symbols-outlined text-sm">
+                    <div className=" text-sm">
                       <ExpandMore fontSize="medium" />
                     </div>
                   </div>
@@ -269,8 +269,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-5 h-5 mr-1"
                         />
                         Desktop
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -280,8 +280,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-5 h-5 mr-1"
                         />
                         Downloads
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -290,8 +290,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                         Documents
                       </div>
@@ -302,8 +302,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-5 h-5 mr-1"
                         />
                         Pictures
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -313,8 +313,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-5 h-5 mr-1"
                         />
                         Music
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -324,8 +324,8 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-5 h-5 mr-1"
                         />
                         Videos
-                        <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                          <PushPin fontSize="medium" />
+                        <div className=" absolute right-1 text-sm opacity-40 rotate-45">
+                          <PushPin fontSize="small" />
                         </div>
                       </div>
                     </div>
@@ -337,7 +337,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-4 h-4 mr-1"
                         />
                         This PC
-                        <div className="material-symbols-outlined absolute left-2 text-lg opacity-30">
+                        <div className=" absolute left-2 text-lg opacity-30">
                           <ChevronRight fontSize="medium" />
                         </div>
                       </div>
@@ -348,7 +348,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                           className="w-4 h-4 mr-1"
                         />
                         Network
-                        <div className="material-symbols-outlined absolute left-2 text-lg opacity-30">
+                        <div className=" absolute left-2 text-lg opacity-30">
                           <ChevronRight fontSize="medium" />
                         </div>
                       </div>
@@ -356,7 +356,7 @@ const Explorer: React.FC<ExplorerProps> = ({
                   </div>
                   <div className="border-0 ml-5 mt-2">
                     <div className="flex items-center hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
-                      <div className="material-symbols-outlined text-2xl font-extralight">
+                      <div className=" text-2xl font-extralight">
                         <ExpandMore fontSize="medium" />
                       </div>
                       <div className="text-xs ml-3 mr-4">Quick access</div>
@@ -374,9 +374,10 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
@@ -392,9 +393,10 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
@@ -410,9 +412,10 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
@@ -428,9 +431,10 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
@@ -446,9 +450,10 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
@@ -464,15 +469,17 @@ const Explorer: React.FC<ExplorerProps> = ({
                             <div className="font-light opacity-50">
                               Stored Locally
                             </div>
-                            <div className="material-symbols-outlined text-sm opacity-40 rotate-45">
-                              <PushPin fontSize="medium" />
-                            </div>
+
+                            <PushPin
+                              fontSize="inherit"
+                              className="text-sm opacity-40 rotate-45"
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="flex items-center hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
-                      <div className="material-symbols-outlined text-2xl font-extralight">
+                      <div className=" text-2xl font-extralight">
                         <ExpandMore fontSize="medium" />
                       </div>
                       <div className="text-xs ml-3 mr-4">Favourites</div>
@@ -577,17 +584,6 @@ const Explorer: React.FC<ExplorerProps> = ({
                     />
                     Resume
                   </div>
-                  <a
-                    href="https://youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center pl-2.5 mr-8 text-xs w-full h-10 rounded-sm hover:bg-neutral-700 text-white bg-neutral-800 border border-black text-center border-opacity-30 gap-2 group"
-                  >
-                    <span className="material-symbols-outlined text-sm ml-5 group-hover:text-red-700">
-                      <Favorite fontSize="medium" />
-                    </span>
-                    Sponser
-                  </a>
                 </div>
                 <AboutMe
                   page={page}

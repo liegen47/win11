@@ -1,8 +1,5 @@
 "use client";
 import React, { useEffect, useMemo, useState, useRef } from "react";
-
-// import RecycleBin from "../components/apps/RecycleBin";
-// import Apps from "../components/apps/Apps";
 // import Torch from "../components/apps/Torch";
 import { motion } from "framer-motion";
 import appsData from "../../data/data";
@@ -15,6 +12,7 @@ import Slider from "@/components/utilities/Slider";
 import Calculator from "@/components/apps/Calculator";
 import RecycleBin from "@/components/apps/RecycleBin";
 import VsCode from "@/components/apps/VsCode";
+import Apps from "@/components/apps/Apps";
 type InputData = any;
 
 interface PageProps {
@@ -43,7 +41,15 @@ const Main: React.FC<PageProps> = ({ params }) => {
   const [aboutMe, setAboutMe] = useState<boolean | null>(null);
   const [input, setInput] = useState<InputData | null>(null);
 
+  const [screenDimensions, setScreenDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
   const toggleWindow = (window: string, input: InputData | null = null) => {
+    if (window === "explorer" && input !== "me") {
+      setAboutMe(true);
+    }
+
     setWindows((prevWindows) => ({
       menu: false,
       start: false,
@@ -56,20 +62,33 @@ const Main: React.FC<PageProps> = ({ params }) => {
       [window]: !prevWindows[window as keyof typeof prevWindows],
     }));
 
-    if (window === "explorer" && input !== null) {
-      setAboutMe(true);
+    if (window === "explorer" && input === "me") {
+      setAboutMe(false);
     } else if (window === "app" && input !== null) {
       setInput(input);
     }
   };
+  useEffect(() => {
+    const updateDimensions = () => {
+      setScreenDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
 
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
+    updateDimensions(); // Update dimensions on initial render
+    window.addEventListener("resize", updateDimensions); // Update on resize
+
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
+    };
+  }, []);
+
   const bounds = {
     left: 0,
     top: 0,
-    right: screenWidth - 1128,
-    bottom: screenHeight - 624,
+    right: screenDimensions.width - 1128,
+    bottom: screenDimensions.height - 624,
   };
 
   function handleFadeOutClick() {
@@ -148,17 +167,8 @@ const Main: React.FC<PageProps> = ({ params }) => {
                 className={`row-start-${index + 1}`}
               >
                 <div
-                  className="w-[5em] h-full flex flex-col justify-center items-center rounded-md hover:bg-white hover:bg-opacity-20 p-2"
-                  onDoubleClick={() =>
-                    toggleWindow(
-                      app.action,
-                      app.subAction
-                        ? {
-                            /* populate with necessary data */
-                          }
-                        : null
-                    )
-                  }
+                  className="w-[5em] h-full flex flex-col justify-center items-center rounded-md hover:bg-white hover:bg-opacity-20 p-6"
+                  onDoubleClick={() => toggleWindow(app.action, app.subAction)}
                 >
                   <img
                     src={app.icon}
@@ -230,14 +240,13 @@ const Main: React.FC<PageProps> = ({ params }) => {
             toggleVsCode={() => toggleWindow("vscode")}
             bounds={bounds}
           />
-          {/* 
-         
+
           <Apps
             isAppOpen={windows.app}
             toggleApp={(input: any) => toggleWindow("app", input)}
             bounds={bounds}
             input={input}
-          /> */}
+          />
         </div>
         <Taskbar
           toggleStart={() => toggleWindow("start")}

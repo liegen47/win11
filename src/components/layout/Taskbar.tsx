@@ -94,7 +94,7 @@ const Taskbar: React.FC<TaskbarProps> = ({
             {" "}
             <VolumeUp fontSize="medium" />
           </div>
-          <div className="material-symbols-outlined text-lg rotate-180">
+          <div className="material-symbols-outlined text-lg ">
             <Battery1Bar fontSize="medium" />
           </div>
         </div>

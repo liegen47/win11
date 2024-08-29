@@ -115,7 +115,7 @@ const Slider: React.FC<SliderProps> = ({
             <Search fontSize="large" />
           </a>
           <a
-            href="https://i.pinimg.com/564x/3a/08/4e/3a084e04a46b5f0cdf09fec54659dc07.jpg"
+            href="https://next-app-egemengulpinar.vercel.app/"
             className="btn"
             target="_blank"
             rel="noopener noreferrer"

@@ -5,8 +5,7 @@ import {
   skills,
   githubRepos,
 } from "../../data/data";
-import { GitHub } from "@mui/icons-material";
-import { Link } from "@mui/material";
+import { GitHub, Link } from "@mui/icons-material";
 interface SkillItemProps {
   skillItem?: {
     name: string;
@@ -306,9 +305,19 @@ const AboutMe: React.FC<AboutMeProps> = ({
         );
       case "Resume":
         return (
-          <main className="border-0 flex w-full justify-center opacity-75 mt-2 text-sm">
-            too bored to make a resume.
-          </main>
+          <div className="bg-neutral-900/80 rounded-md px-4 pt-3 hover:translate-x-1 hover:-translate-y-1 duration-300 text-selection">
+            <div className="flex items-center justify-between">
+              {" "}
+              <h3 className="font-bold mt-6">My Resume</h3>{" "}
+              <a
+                href="/resume/resume_vansh_2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-neutral-500 mt-4 text-sm">view</p>
+              </a>
+            </div>
+          </div>
         );
       default:
         return "404 not found";

@@ -17,7 +17,9 @@ import {
   PostgresqlOriginal,
   PhotoshopOriginal,
   FigmaOriginal,
-  BlenderOriginal,
+  SolidityOriginal,
+  HardhatOriginal,
+  MaterialuiOriginal,
 } from "devicons-react";
 
 // Constants
@@ -59,38 +61,37 @@ export const workExperienceTemplate = [
   },
 ];
 
-// GitHub Repositories
 export const githubRepos = [
   {
     name: "Portfolio",
-    techUsed: ["Next.js", "TailwindCSS"],
+    techUsed: ["Next.js", "TailwindCSS", "React"],
     description: "Uncover deeper insights into my journey and capabilities.",
-    githubLink: `${githubLink}/Portfolio`,
-    liveURL: "https://portfolio-vert-one-79.vercel.app/",
+    githubLink: `${githubLink}/My-portfolio`,
+    liveURL: "https://my-portfolio-gold-six.vercel.app/",
   },
   {
-    name: "Emoji-TicTacToe",
-    techUsed: ["React", "TailwindCSS"],
+    name: "Advanced Table",
+    techUsed: ["React", "TailwindCSS", "MaterialUI", "Next.js"],
     description:
-      "Emoji TicTacToe adds a fun twist to the classic game with colorful emojis, offering single and local multiplayer modes, responsive design, and captivating animations.",
-    githubLink: `${githubLink}/Emoji-TicTacToe`,
-    liveURL: "https://emoji-tic-tac-toe.vercel.app/",
+      "Advanced Table is implementation of table with all type of filters ,Sort methods and categorization",
+    githubLink: `${githubLink}/advanced-table`,
+    liveURL: "https://advanced-table-six.vercel.app/",
   },
   {
-    name: "GTA-VI(Early Access)",
-    techUsed: ["Python"],
+    name: "NFT-seller",
+    techUsed: ["React", "Hardhat", "Solidity"],
     description:
-      "Explore chaos in GTA VI(Early Access), a Python and Ursina-powered open-world adventure. Engage in a gripping narrative, experience dynamic gameplay, and unlock exclusive updates. Navigate the urban jungle and gear up for the thrill!",
-    githubLink: `${githubLink}/GTA-VI-Early-Access-`,
-    liveURL: `${githubLink}/GTA-VI-Early-Access-`,
+      "The NFT Seller Project is a cutting-edge platform designed to facilitate the creation, listing, and sale of Non-Fungible Tokens (NFTs). It empowers artists, creators, and collectors by providing a user-friendly interface for minting digital assets, managing their NFT portfolio, and engaging in secure transactions. ",
+    githubLink: `${githubLink}/NFT-seller`,
+    liveURL: `${githubLink}/NFT-seller`,
   },
   {
-    name: "NYX",
-    techUsed: ["HTML", "CSS", "JavaScript"],
+    name: "secure-medshare",
+    techUsed: ["React", "Node.js", "Hardhat", "Solidity"],
     description:
-      "NYX is a sleek Website Blocker that empowers users to block distracting websites for set durations, promoting productivity and focus.",
-    githubLink: `${githubLink}/nyx`,
-    liveURL: `${githubLink}/nyx`,
+      "This project focuses on creating a secure and efficient system for sharing sensitive information using blockchain technology. ",
+    githubLink: `${githubLink}/secure-medshare`,
+    liveURL: `${githubLink}/secure-medshare/blob/main/README.md`,
   },
 ];
 
@@ -101,6 +102,20 @@ export const educationExperience = [
     institution: "Hindustan Institute of Science & Technology",
     graduation: "May 2024",
     degree: "Bachelor in Computer Science and Engineering",
+    type: "education",
+  },
+  {
+    key: 2,
+    institution: "Govt. Boys Higher Secondary School",
+    graduation: "April 2020",
+    degree: "XII",
+    type: "education",
+  },
+  {
+    key: 3,
+    institution: "Peoples Academy High School",
+    graduation: "April 2018",
+    degree: "X",
     type: "education",
   },
 ];
@@ -206,12 +221,6 @@ export const skills = [
     icon: <PostgresqlOriginal className={iconClass} size={iconSize} />,
   },
   {
-    key: 17,
-    name: "Blender",
-    type: "tool",
-    icon: <BlenderOriginal className={iconClass} size={iconSize} />,
-  },
-  {
     key: 18,
     name: "Photoshop",
     type: "tool",
@@ -222,6 +231,30 @@ export const skills = [
     name: "Figma",
     type: "tool",
     icon: <FigmaOriginal className={iconClass} size={iconSize} />,
+  },
+  {
+    key: 20,
+    name: "Solidity",
+    type: "tech",
+    icon: <SolidityOriginal className={iconClass} size={iconSize} />,
+  },
+  {
+    key: 21,
+    name: "Hardhat",
+    type: "tech",
+    icon: <HardhatOriginal className={iconClass} size={iconSize} />,
+  },
+  {
+    key: 22,
+    name: "MaterialUI",
+    type: "tech",
+    icon: <MaterialuiOriginal className={iconClass} size={iconSize} />,
+  },
+  {
+    key: 23,
+    name: "Node.js",
+    type: "tech",
+    icon: <NodejsOriginal className={iconClass} size={iconSize} />,
   },
 ];
 
@@ -238,6 +271,7 @@ const appsData = [
     name: "About Me",
     icon: "/images/apps/folder.png",
     action: "explorer",
+    subAction: "me",
     size: "w-18 h-18",
   },
   {
@@ -270,10 +304,10 @@ const appsData = [
   },
   {
     id: 7,
-    name: "Emoji TicTacToe",
-    icon: "https://raw.githubusercontent.com/MishanPoudel/Emoji-TicTacToe/main/public/favicon.ico",
+    name: "Game",
+    icon: "https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/128/Play-Games-icon.png",
     action: "app",
-    subAction: "emoji",
+    subAction: "game",
     size: "w-10 h-10",
   },
   {

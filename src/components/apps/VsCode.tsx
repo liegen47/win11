@@ -1,3 +1,4 @@
+import { CheckBoxOutlineBlank, Close, Minimize } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import Draggable from "react-draggable";
 
@@ -33,20 +34,20 @@ const VsCode: React.FC<VsCodeProps> = ({ isAppOpen, toggleVsCode, bounds }) => {
                 onClick={toggleVsCode}
                 aria-label="Minimize"
               >
-                minimize
+                <Minimize fontSize="medium" />
               </button>
               <button
                 className="material-symbols-outlined hover:bg-neutral-700 mb-2 w-11 flex justify-center items-center text-sm"
                 aria-label="Maximize"
               >
-                check_box_outline_blank
+                <CheckBoxOutlineBlank fontSize="medium" />
               </button>
               <button
                 className="material-symbols-outlined hover:bg-red-700 mb-2 w-12 flex justify-center items-center text-xl"
                 onClick={toggleVsCode}
                 aria-label="Close"
               >
-                close
+                <Close fontSize="medium" />
               </button>
             </div>
           </div>

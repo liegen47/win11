@@ -234,7 +234,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Desktop
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -245,7 +245,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Documents
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -256,7 +256,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Downloads
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -267,7 +267,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Music
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -278,7 +278,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Pictures
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -289,7 +289,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Videos
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                 </div>
@@ -302,7 +302,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     This PC
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -313,7 +313,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Network
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                   <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
@@ -324,7 +324,7 @@ const RecycleBin: React.FC<RecycleBinProps> = ({
                     />
                     Recycle Bin
                     <div className="material-symbols-outlined absolute right-1 text-sm opacity-40 rotate-45">
-                      <PushPin fontSize="medium" />
+                      <PushPin fontSize="small" />
                     </div>
                   </div>
                 </div>

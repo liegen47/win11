@@ -1,4 +1,5 @@
 "use client";
+import { ExpandMore } from "@mui/icons-material";
 import React, { useState, MouseEvent } from "react";
 
 interface MenuItemProps {
@@ -19,7 +20,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     <div className="justify-center">{text}</div>
     {showArrow && (
       <div className="material-symbols-outlined rotate-[-90deg] justify-end opacity-50 font-extralight">
-        expand_more
+        <ExpandMore fontSize="medium" />
       </div>
     )}
   </div>
