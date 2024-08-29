@@ -53,7 +53,7 @@ const VsCode: React.FC<VsCodeProps> = ({ isAppOpen, toggleVsCode, bounds }) => {
           <div className="content text-white select-none text-center flex justify-center h-full">
             {contentLoaded && (
               <iframe
-                src="https://github1s.com/MishanPoudel/Windows11-3.0/blob/main/src/Pages/main.js"
+                src="https://github1s.com/liegen47/win11/blob/main/src/app/%5Bname%5D/page.tsx"
                 title="VsCode"
                 className="h-full w-full bg-ub-cool-grey"
               ></iframe>
